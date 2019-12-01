@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@android:dimen/app_icon_size"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/marks"
+        android:layout_below="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marks"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/idText"
+        android:layout_below="@+id/marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id : "
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:id="@+id/idEditTExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marks"
+        android:layout_toRightOf="@+id/idText"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_below="@+id/idEditTExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:layout_below="@id/idEditTExt"
+        android:layout_toRightOf="@id/add"/>
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:text="Update"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/update"
+        android:text="Delete"/>
+</RelativeLayout>
